@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { addExercise } from '../actions/index';
+import '../index.css';
 
 const AddExercise = (props) => {
     console.log("props from AddExercise ", props);
@@ -21,7 +22,7 @@ const AddExercise = (props) => {
 
     return (
         <div>
-            <h2>Add an Exercise To Today's Workout</h2>    
+            <h2>Add an Exercise to Today's Workout</h2>    
             <form onSubmit={exerciseHandler}>
                 <input 
                     type="text" 
@@ -58,6 +59,7 @@ const AddExercise = (props) => {
                     onChange={inputHandler}
                     className="input"
                 />
+                <button className="input button">Submit Exercise</button>
             </form>
         </div>
     )
