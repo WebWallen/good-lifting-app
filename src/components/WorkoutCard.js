@@ -14,7 +14,7 @@ export default function WorkoutCard(props) {
                 Rest Period: {props.workout.rest}
             </p> */}
 
-            <h1>Date: 09/27/19</h1>
+            <h1>Training Log Date: 09/27/19</h1>
 
             <div className="exercise-card">
                 <h2>Clean and Jerk</h2>
