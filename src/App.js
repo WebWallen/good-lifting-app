@@ -3,6 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { getWorkouts } from './actions/index';
 import Workouts from './components/Workouts';
+import WorkoutCard from './components/WorkoutCard';
 import AddExercise from './components/AddExercise';
 
 const App = ({ workouts, getWorkouts }) => {
@@ -18,8 +19,8 @@ const App = ({ workouts, getWorkouts }) => {
 
     <div className="App">
       A lifting app that actually works (or will soon)
-      <Workouts />
       <AddExercise />
+      <WorkoutCard />
     </div>
 
   );
